@@ -3,4 +3,9 @@
     <string name="COMPASS" />
     <string name="image">image</string>
     <string name="setDestination">Set Destination</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="map">Map</string>
+    <string name="submit">Submit</string>
+    <string name="arrow">Arrow</string>
 </resources>

@@ -4,36 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
+
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_Destination"
         android:layout_width="match_parent"
         android:layout_height="83dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginTop="3dp"
         android:background="@drawable/text_view_shape"
         android:text="@string/COMPASS"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="15sp"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.434"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="409dp"
-        android:layout_height="469dp"
-        android:layout_marginTop="92dp"
+        android:layout_width="421dp"
+        android:layout_height="437dp"
         android:contentDescription="@string/image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:srcCompat="@drawable/compass" />
-
 
     <Button
         android:id="@+id/button"
@@ -47,4 +46,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="72dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="169dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Destination"
+        app:srcCompat="@drawable/triangle"
+        android:contentDescription="@string/arrow" />
 </androidx.constraintlayout.widget.ConstraintLayout>
